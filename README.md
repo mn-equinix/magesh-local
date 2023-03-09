@@ -16,11 +16,11 @@ gcloud iam service-accounts create cloud-run-poc \
 
 Setting the <a href="https://cloud.google.com/run/docs/deploying-source-code#permissions_required_to_deploy">permissions</a> required to deploy the app directly from source code.
 
-`
+```
 gcloud projects add-iam-policy-binding arched-autumn-379510 \
     --member="serviceAccount:cloud-run-poc@arched-autumn-379510.iam.gserviceaccount.com" \
     --role="roles/cloudbuild.builds.editor"
-`
+```
 
 `gcloud projects add-iam-policy-binding arched-autumn-379510 \
     --member="serviceAccount:cloud-run-poc@arched-autumn-379510.iam.gserviceaccount.com" \
