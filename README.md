@@ -4,9 +4,11 @@
 
 Google <a href="https://cloud.google.com/run/docs/securing/service-identity#per-service-identity">recommends</a> giving every Cloud Run service a dedicated identity by assigning it a user-managed service account instead of using the default service account.
 
-`gcloud iam service-accounts create cloud-run-poc \
-    --description="User-managed SA for Cloud Run" \
-    --display-name="Cloud_Run_POC"`
+```
+gcloud iam service-accounts create cloud-run-poc
+    --description="User-managed SA for Cloud Run"
+    --display-name="Cloud_Run_POC"
+```
 
 ## [Optional] Permissions
 
