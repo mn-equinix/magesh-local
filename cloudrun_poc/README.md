@@ -216,7 +216,7 @@ For the purpose of this POC, the service-to-service authentication using <a href
 
 ```
 TOKEN=$( \
-    curl "http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/identity?audience=https://helloworld-ckvkxr6hea-uc.a.run.app" \
+    curl "http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/identity?audience=https://helloworld-r4ryvykfjq-uc.a.run.app" \
     -H "Metadata-Flavor: Google")
 ```
 
