@@ -212,6 +212,8 @@ Apart from restricting the network traffic to internal, we can allow only the au
 
 For the purpose of this POC, the service-to-service authentication using <a href="https://cloud.google.com/run/docs/authenticating/service-to-service#use_the_metadata_server">metadata server</a> to fetch the JWT is used. This has a limitation that the method does not work outside of Google Cloud. For such purposes, using <a href="https://cloud.google.com/run/docs/authenticating/service-to-service#use_the_authentication_libraries">authentication libraries</a> would be a reliable way.
 
+<p style="color:blue">Replace the query parameter 'audience' in the below URL with that of the respective Cloud Run service accordingly.</p>
+
 ```
 TOKEN=$( \
     curl "http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/identity?audience=https://helloworld-ckvkxr6hea-uc.a.run.app" \
